@@ -1,11 +1,11 @@
 import { Ionicons } from "@expo/vector-icons";
 import {
-    Image,
-    ScrollView,
-    StyleSheet,
-    Text,
-    TouchableOpacity,
-    View,
+  Image,
+  ScrollView,
+  StyleSheet,
+  Text,
+  TouchableOpacity,
+  View,
 } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { Colors } from "../../../constants/colors";
@@ -19,7 +19,7 @@ export default function Profile() {
   return (
     <SafeAreaView style={styles.safe} edges={["top"]}>
       <View style={styles.topBar}>
-        <Text style={styles.topUsername}>juandc</Text>
+        <Text style={styles.topUsername}>markcooos</Text>
         <Ionicons name="menu" size={28} color={Colors.text} />
       </View>
 
@@ -27,7 +27,7 @@ export default function Profile() {
         {/* Avatar + stats */}
         <View style={styles.headerRow}>
           <Image
-            source={{ uri: "https://i.pravatar.cc/300?img=5" }}
+            source={require("../../../../assets/images/profile.jpg")}
             style={styles.avatar}
           />
           <View style={styles.stats}>
@@ -36,11 +36,11 @@ export default function Profile() {
               <Text style={styles.statLabel}>Posts</Text>
             </View>
             <View style={styles.stat}>
-              <Text style={styles.statNumber}>312</Text>
+              <Text style={styles.statNumber}>1.2M</Text>
               <Text style={styles.statLabel}>Followers</Text>
             </View>
             <View style={styles.stat}>
-              <Text style={styles.statNumber}>180</Text>
+              <Text style={styles.statNumber}>80</Text>
               <Text style={styles.statLabel}>Following</Text>
             </View>
           </View>
@@ -48,8 +48,8 @@ export default function Profile() {
 
         {/* Name + bio */}
         <View style={styles.bio}>
-          <Text style={styles.name}>Juan Dela Cruz</Text>
-          <Text style={styles.bioText}>Music lover 🎶 | OPM | Guitar</Text>
+          <Text style={styles.name}>Mark Lester Baculio</Text>
+          <Text style={styles.bioText}>Music lover 🎶 | BSIT | God First </Text>
         </View>
 
         <TouchableOpacity style={styles.editButton}>
@@ -60,7 +60,7 @@ export default function Profile() {
         <View style={styles.details}>
           <View style={styles.detailRow}>
             <Ionicons name="mail-outline" size={20} color={Colors.text} />
-            <Text style={styles.detailText}>juan@example.com</Text>
+            <Text style={styles.detailText}>email@example.com</Text>
           </View>
           <View style={styles.detailRow}>
             <Ionicons name="call-outline" size={20} color={Colors.text} />
@@ -68,7 +68,7 @@ export default function Profile() {
           </View>
           <View style={styles.detailRow}>
             <Ionicons name="location-outline" size={20} color={Colors.text} />
-            <Text style={styles.detailText}>Manila, Philippines</Text>
+            <Text style={styles.detailText}>Opol, Misamis Oriental</Text>
           </View>
           <View style={styles.detailRow}>
             <Ionicons

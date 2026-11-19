@@ -1,6 +1,6 @@
-import { Tabs } from 'expo-router';
-import { Ionicons } from '@expo/vector-icons';
-import { Colors } from '../../../constants/colors';
+import { Ionicons } from "@expo/vector-icons";
+import { Tabs } from "expo-router";
+import { Colors } from "../../../constants/colors";
 
 export default function TabsLayout() {
   return (
@@ -21,7 +21,7 @@ export default function TabsLayout() {
         options={{
           tabBarIcon: ({ focused, size }) => (
             <Ionicons
-              name={focused ? 'home' : 'home-outline'}
+              name={focused ? "home" : "home-outline"}
               size={size}
               color={Colors.text}
             />
@@ -33,7 +33,7 @@ export default function TabsLayout() {
         options={{
           tabBarIcon: ({ focused, size }) => (
             <Ionicons
-              name={focused ? 'person-circle' : 'person-circle-outline'}
+              name={focused ? "person-circle" : "person-circle-outline"}
               size={size + 4}
               color={Colors.text}
             />
